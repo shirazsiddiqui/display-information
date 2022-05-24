@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>ROITech Assignment</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <!-- onFormSubmit-->
+                <form autocomplete="off">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dob" id="dob">
+                    </div>
+                    <div>
+                        <label for="gender" >Gender</label>
+                        <select name="gender" id="gender">
+                          <option value="0">Select Gender</option>
+                          <option value="1">Male</option>
+                          <option Value="2">Female</option>
+                        </select>
+                    </div>
+                        <br><br><br><br>
+                    <div class="form_action--button">
+                        <input type="button" id="button" value="Submit" onclick="onFormSubmit()">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Date of Birth</th>
+                                <th>Gender</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+    
+    
+</body>
+</html>
